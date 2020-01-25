@@ -10,4 +10,9 @@ Adds subtitles to the game.
 
 **Requirements:**
 * BepInEx 5  
-* https://github.com/Mantas-2155X/PH_UITranslation
+* https://github.com/Mantas-2155X/PH_UITranslation  
+
+**Translations:**
+* https://pastebin.com/u4p09Ere
+* PlayHome_English_Translation
+* Drop **ONLY** the `Plugins` folder in your game directory.  
