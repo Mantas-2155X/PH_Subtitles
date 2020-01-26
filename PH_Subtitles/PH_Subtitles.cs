@@ -1,13 +1,12 @@
 ﻿using System;
-using HarmonyLib;
 using BepInEx;
-
 using BepInEx.Harmony;
+using HarmonyLib;
 using UnityEngine;
 using UnityEngine.UI.Translation;
 
 namespace PH_Subtitles {
-    [BepInPlugin(nameof(PH_Subtitles), nameof(PH_Subtitles), "1.0.0")]
+    [BepInPlugin(nameof(PH_Subtitles), nameof(PH_Subtitles), "1.1.0")]
     public class PH_Subtitles : BaseUnityPlugin
     {
         private void Awake()

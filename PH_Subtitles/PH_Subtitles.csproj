@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PH_Subtitles</RootNamespace>
     <AssemblyName>PH_Subtitles</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,31 +33,55 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\lib\BepInEx\0Harmony.dll</HintPath>
+      <HintPath>..\..\lib\BepInEx\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\lib\BepInEx\BepInEx.dll</HintPath>
+      <HintPath>..\..\lib\BepInEx\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\lib\BepInEx\BepInEx.Harmony.dll</HintPath>
+      <HintPath>..\..\lib\BepInEx\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\lib\PlayHome\UnityEngine.dll</HintPath>
+      <HintPath>..\..\lib\PlayHome\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\lib\PlayHome\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI.Translation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\mnt\5B8AE64A62AE0E00\Games\PlayHome\PlayHome64bit_Data\Managed\UnityEngine.UI.Translation.dll</HintPath>
+      <HintPath>..\..\lib\PlayHome\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PH_Subtitles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UITranslation\AudioSourceSubtitle.cs" />
+    <Compile Include="UITranslation\FontBorderChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontColorChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontMarginChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontNameChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontShadowChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontSizeChangedEventArgs.cs" />
+    <Compile Include="UITranslation\FontStyleChangedEventArgs.cs" />
+    <Compile Include="UITranslation\IniSettings.cs" />
+    <Compile Include="UITranslation\ISubtitle.cs" />
+    <Compile Include="UITranslation\ISubtitleBorder.cs" />
+    <Compile Include="UITranslation\ISubtitleShadow.cs" />
+    <Compile Include="UITranslation\ISubtitleUserInterface.cs" />
+    <Compile Include="UITranslation\KeyTranslationData.cs" />
+    <Compile Include="UITranslation\RegexTranslationData.cs" />
+    <Compile Include="UITranslation\Subtitle.cs" />
+    <Compile Include="UITranslation\SubtitleCanvas.cs" />
+    <Compile Include="UITranslation\SubtitleData.cs" />
+    <Compile Include="UITranslation\SubtitleDataBase.cs" />
+    <Compile Include="UITranslation\SubtitleLine.cs" />
+    <Compile Include="UITranslation\SubtitleSettings.cs" />
+    <Compile Include="UITranslation\SubtitleTranslator.cs" />
+    <Compile Include="UITranslation\SubtitleUserInterfaceBase.cs" />
+    <Compile Include="UITranslation\System\IniFile.cs" />
+    <Compile Include="UITranslation\TextPositionExtension.cs" />
+    <Compile Include="UITranslation\TranslationData.cs" />
+    <Compile Include="UITranslation\TranslationDataBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
